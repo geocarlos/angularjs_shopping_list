@@ -1,0 +1,17 @@
+body{    
+    padding: 2em;
+}
+
+input{
+    font-size: 0.5em;
+}
+
+.container{
+    font-size: 2em;
+}
+
+.row{
+    background-color: #ddd;
+    margin: 2em;
+    overflow-y: auto;
+}
