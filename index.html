@@ -13,7 +13,7 @@
         <div class="container">
             <h1 class="text-center text-primary">{{appName}}</h1>
             <form ng-submit="addItems(item)">
-                <input id="in-text" type="text" ng-model="item" placeholder="novo item" required />
+                <input id="in-text" type="text" ng-model="item" placeholder="{{placeholder}}" required />
                 <button class="btn btn-lg btn-primary">{{addBtnLabel}}</button>
             </form>
             <div class="row" ng-repeat="item in list track by $index">
@@ -21,7 +21,7 @@
                 <div class="col-sm-6 text-right"><button class="btn btn-lg btn-danger" ng-click="removeItem(item)">{{delBtnLabel}}</button></div>
             </div>
         </div>
-        <script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>        
+        <script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
         <script src="js/app.js" type="text/javascript" charset="utf-8"></script>
         <script src="js/controller.js" type="text/javascript" charset="utf-8"></script>
         <script src="js/service.js" type="text/javascript" charset="utf-8"></script>
