@@ -1,6 +1,6 @@
 app.controller("slContrl", ($scope, slService)=>{
         $scope.strings = slService.getStrings();
-        let lang = navigator.language.substring(0,3);
+        let lang = navigator.language.substring(0,2);
         if(lang !== 'pt'){
           lang = 'en'
         }
