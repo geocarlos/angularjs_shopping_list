@@ -2,7 +2,8 @@ app.controller("slContrl", ($scope, slService)=>{
         $scope.strings = slService.getStrings();
         let lang = navigator.language.substring(0,2);
         if(lang !== 'pt'){
-          lang = 'en'
+          lang = 'en';
+          document.querySelector('title').textContent = 'Shopping List';
         }
         $scope.appName = $scope.strings[lang].APP_NAME;
         $scope.addBtnLabel = $scope.strings[lang].ADD_ITEM;
